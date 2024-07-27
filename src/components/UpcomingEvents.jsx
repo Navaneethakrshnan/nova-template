@@ -1,23 +1,15 @@
-import React from 'react'
+import React from "react";
 import Image1 from "../assets/FB new.jpg";
 import Image2 from "../assets/451840760.jpg";
 
-import "./Events.css"; 
+import "./Events.css";
 
 const UpcomingEvents = () => {
   return (
     <div>
       <div>
-        <section class="text-gray-600 lg:px-12 body-font">
-          <div class="container px-5 pt-6 mb-12 mx-auto">
-            <div class="flex flex-col text-center w-full mb-20">
-              <h1
-                class="text-4xl font-mediumnt- title-font text-[#292662]"
-                style={{ fontFamily: "Nunito Sans, sans-serif" }}
-              >
-                Upcoming Events
-              </h1>
-            </div>
+        <section class="text-gray-600 mt-10 lg:px-12 body-font">
+          <div class="container px-5 pt-6 mb-0 mx-auto">
             <div class="flex flex-wrap lg:-mt-12 -m-4">
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
@@ -80,6 +72,6 @@ const UpcomingEvents = () => {
       </div>
     </div>
   );
-}
+};
 
-export default UpcomingEvents
+export default UpcomingEvents;

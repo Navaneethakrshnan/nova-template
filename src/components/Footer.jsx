@@ -7,37 +7,65 @@ const Footer = () => {
         <div class="container px-10 md:pl-64 lg:px-10 py-8 mx-auto">
           <div class="flex flex-wrap text-center -mb-10 -mx-4 md:space-x-2 lg:space-x-10 xl:space-x-10 2xl:space-x-14">
             <div class="lg:w-1/6 md:w-1/2  w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-white tracking-widest text-sm mb-3"
+                style={{ fontFamily: "Nunito Sans, sans-serif" }}
+              >
                 Reach Us At:
               </h2>
-              <nav class="list-none mb-10">
+              <nav
+                class="list-none mb-10"
+                style={{ fontFamily: "Nunito Sans, sans-serif" }}
+              >
                 <li>
-                  <a class="text-white">First Link</a>
+                  <a
+                    class="text-white"
+                    style={{ fontFamily: "Nunito Sans, sans-serif" }}
+                  >
+                    First Link
+                  </a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-white tracking-widest text-sm mb-3"
+                style={{ fontFamily: "Nunito Sans, sans-serif" }}
+              >
                 About Us
               </h2>
             </div>
             <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-white tracking-widest text-sm mb-3"
+                style={{ fontFamily: "Nunito Sans, sans-serif" }}
+              >
                 Privacy Policy
               </h2>
             </div>
             <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-white tracking-widest text-sm mb-3"
+                style={{ fontFamily: "Nunito Sans, sans-serif" }}
+              >
                 Refund and Cancellation
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-white">Policy</a>
+                  <a
+                    class="text-white"
+                    style={{ fontFamily: "Nunito Sans, sans-serif" }}
+                  >
+                    Policy
+                  </a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-white tracking-widest text-sm mb-3"
+                style={{ fontFamily: "Nunito Sans, sans-serif" }}
+              >
                 Terms and Conditions
               </h2>
             </div>
@@ -45,7 +73,10 @@ const Footer = () => {
         </div>
         <hr></hr>
         <div class="container px-10 py-6 mx-auto flex items-center sm:flex-row flex-col">
-          <p class="text-sm text-white sm:ml-6 sm:mt-0 mt-4">
+          <p
+            class="text-sm text-white sm:ml-6 sm:mt-0 mt-4"
+            style={{ fontFamily: "Nunito Sans, sans-serif" }}
+          >
             © 2024 NovaRace Management Solutions LLP. All Rights Reserved
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 2xl:pr-12 justify-center sm:justify-start">

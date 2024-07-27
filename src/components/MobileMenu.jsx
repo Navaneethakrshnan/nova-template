@@ -11,13 +11,13 @@ const MobileMenu = () => {
 
   return (
     <div>
-      <nav className="bg-white border-gray-200 px-4 py-2.5 block lg:hidden">
-        <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
+      <nav className="bg-white relative border-gray-200 px-4 py-2.5 block lg:hidden">
+        <div className="flex flex-wrap sticky top-0 items-center justify-between max-w-screen-xl mx-auto">
           <a href="https://www.novarace.in/" className="flex items-center">
             <img src={LOGO} className="h-12" alt="Logo" />
           </a>
           <button
-            onClick={toggleMenu}
+            onClick={toggleMenu}sticky top-0 
             className="inline-flex items-center p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="mobile-menu"
             aria-expanded={isOpen ? "true" : "false"}

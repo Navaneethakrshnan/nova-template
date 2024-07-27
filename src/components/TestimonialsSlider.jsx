@@ -1,80 +1,142 @@
 import React from "react";
-import Slider from "react-slick";
+import Image1 from "../assets/salem.jpg";
+import Image2 from "../assets/erode.jpg";
+import Image3 from "../assets/sivagiri.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialsSlider = () => {
-  const phoneNumber = "9626560404";
-  const testimonials = [
-    {
-      id: 1,
-      header:
-        "NovaRace: Your Complete Race Management Solution, from Start Line to Finish Line",
-    },
-    {
-      id: 2,
-      header:
-        "Timing Solutions Tailored to Your Race Needs - Contact NovaRace Today!",
-    },
-    {
-      id: 3,
-      header:
-        "Simplify Event Management with NovaRace: Online Registration Made Easy!",
-    },
-  ];
-  const sliderSettings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
   };
+
   return (
-    <>
-      <section className="testimonials-slider masthead -type-4">
-        <div className="h-auto masthead-slider overflow-x-hidden overflow-y-hidden p-4">
-          <div className="flex justify-center items-center text-center">
-            <Slider {...sliderSettings}>
-              {testimonials.map((testimonial, index) => (
-                <div key={testimonial.id} className="testimonial px-3">
-                  <h1
-                    className="text-5xl lg:text-4xl md:text-3xl text-white"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    {testimonial.header.split(" ").map((word, i) => (
-                      <span
-                        key={i}
-                        className={word === "NovaRace:" ? "text-red-600" : ""}
-                      >
-                        {word}{" "}
-                      </span>
-                    ))}
-                  </h1>
-                  <div className="inline-block mt-8">
-                    <a
-                      href={`https://wa.me/${phoneNumber}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-primary mt-3 text-white bg-black border border-white py-2 px-4 rounded"
-                    >
-                      Call us
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </Slider>
+    <div>
+      <Slider {...settings}>
+        <div
+          id="indicators-carousel"
+          class="relative w-full"
+          data-carousel="static"
+        >
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                src={Image1}
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src={Image2}
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src={Image3}
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
           </div>
+
+          <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
         </div>
-      </section>
-      <div className="area">
-        <ul className="circles">
-          {[...Array(10)].map((_, index) => (
-            <li key={index}></li>
-          ))}
-        </ul>
-      </div>
-    </>
+      </Slider>
+    </div>
   );
 };
 

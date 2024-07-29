@@ -1,7 +1,7 @@
 import React from 'react'
 import Image1 from "../assets/FB new.jpg";
 import Image2 from "../assets/451840760.jpg";
-
+import { Link } from 'react-router-dom';
 import "./Events.css"; 
 
 const UpcomingEvents = () => {
@@ -20,7 +20,9 @@ const UpcomingEvents = () => {
             </div>
             <div class="flex flex-wrap lg:-mt-12 -m-4">
               <div class="p-4 lg:w-1/4 md:w-1/2">
-                <div class="h-full flex flex-col items-center text-center">
+                <div
+                  class="h-full flex flex-col items-center text-center"
+                >
                   <div className="overflow-hidden">
                     <div className="flex items-start">
                       <div className="relative overflow-hidden">

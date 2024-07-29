@@ -20,7 +20,8 @@ const Home = () => {
     <div>
       <MainMenu />
       <MobileMenu />
-      <Events />
+      {/* <Testimonial /> */}
+       <Events />
       <Button />
       <UpcomingEvents />
       <Button />
@@ -28,8 +29,7 @@ const Home = () => {
       <Enquirey />
       <WhyChooseUs />
       <Contact />
-      {/* <RegistrationPage/> */}
-      {/* <EventLanding /> */}
+      
       <Footer />
     </div>
   );

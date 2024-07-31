@@ -134,21 +134,39 @@ const RegistrationPage = () => {
                   <h2 className="text-lg font-medium -ml-3 justify-start text-left text-gray-700 mb-4">
                     SELECT YOUR CATEGORY
                   </h2>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex flex-col items-start space-y-4">
                     <label
                       htmlFor="category"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Categories<span className="text-red-500">*</span>
                     </label>
-                    <select className="block px-5 py-2 2xl:w-80 xl:w-64 lg:w-52 md:w-64 sm:w-56 w-44 border border-gray-300 h-12 bg-white rounded-md shadow-sm focus:outline-none focus:ring-grey-500 sm:text-sm">
-                      <option className="px-5" value="" disabled selected>
-                        Select
-                      </option>
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
-                      <option value="option3">Option 3</option>
-                    </select>
+                    <div className="relative mt-2 w-full">
+                      <input
+                        id="cate"
+                        name="cate"
+                        className="block pl-10 pr-3 py-2 2xl:w-[34rem] xl:w-[28rem] lg:w-[21rem] md:w-[30rem] sm:w-56 w-[17rem] border border-gray-300 h-28 bg-white rounded-md shadow-sm focus:outline-none focus:ring-grey-500 sm:text-sm"
+                      />
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <div className="lg:w-28 w-40 h-16 md:w-24 md:h-16 lg:h-16 lg:ml-2 xl:ml-5 ml-1 bg-[#292662] rounded-full text-xl font-semibold text-white flex items-center justify-center">
+                          1Km
+                        </div>
+                        <div className="ml-6 space-y-2">
+                          <p className="font-bold text-2xl">1Km</p>
+                          <p className="text-lg">Timed</p>
+                          <p className="text-lg">₹100</p>
+                        </div>
+                        <div className="flex justify-end w-full">
+                          <input
+                            id="default-radio-1"
+                            type="radio"
+                            value=""
+                            name="default-radio"
+                            className="w-5 h-5 -ml-3 md:ml-60 lg:ml-16 xl:ml-40 2xl:ml-64 mr-5 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="pb-10 mb-4 pl-8 sm:pl-12 border pt-7 border-[#e2e5e9] mt-auto w-full">
@@ -158,7 +176,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center space-x-4">
                     <label
                       htmlFor="firstName"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       FirstName<span className="text-red-500">*</span>
                     </label>
@@ -179,7 +197,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="lastName"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       LastName<span className="text-red-500">*</span>
                     </label>
@@ -198,7 +216,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="dob"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Date of Birth <span className="text-red-500">*</span>
                     </label>
@@ -238,7 +256,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="bloodGroup"
-                      className="2xl:w-52 xl:w-44lg:w-28 lg:w-28 md:w-52 sm:w-32 w-20 text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44lg:w-28 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Blood Group <span className="text-red-500">*</span>
                     </label>
@@ -263,7 +281,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="bibName"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Name On the bib <span className="text-red-500">*</span>
                     </label>
@@ -279,7 +297,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="tShirtSize"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       T Shirt size <span className="text-red-500">*</span>
                     </label>
@@ -319,7 +337,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="medicalIssues"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Medical Issues
                     </label>
@@ -335,7 +353,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="address"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Address <span className="text-red-500">*</span>
                     </label>
@@ -351,7 +369,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="tShirtSize"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       State <span className="text-red-500">*</span>
                     </label>
@@ -378,7 +396,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="pincode"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Pincode <span className="text-red-500">*</span>
                     </label>
@@ -395,37 +413,8 @@ const RegistrationPage = () => {
                     )}
                   </div>
                 </div>
-                <div className="mt-4 hidden lg:block">
-                  <label
-                    htmlFor="lastName"
-                    className="w-52 text-base justify-start text-start"
-                  >
-                    Indicates mandatory fields{" "}
-                    <span className="text-red-500">*</span>
-                  </label>
-                  <div class="flex mt-4 items-center mb-4">
-                    <input
-                      id="default-checkbox"
-                      type="checkbox"
-                      value=""
-                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    />
-                    <label
-                      for="default-checkbox"
-                      class="ms-2 text-sm font-sm text-gray-400"
-                    >
-                      I have read and agree to the terms and conditions
-                    </label>
-                  </div>
-                  <button
-                    type="submit"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                  >
-                    Register
-                  </button>
-                </div>
               </div>
-              <div className="p-8 2xl:w-1/2 xl:w-[37rem] lg:w-[30rem] md:w-[40rem] sm:w-[32rem] flex flex-col items-start 2xl:mx-auto ">
+              <div className="p-8 2xl:w-1/2 xl:w-[37rem] lg:w-[30rem] md:w-[40rem] sm:w-[32rem] -mt-16 md:mt-0 flex flex-col items-start 2xl:mx-auto ">
                 <div className="pb-10 mb-4 pl-8 sm:pl-12 border pt-7 border-grey-300 mt-6 w-full">
                   <h2 className="text-lg font-medium -ml-3 justify-start text-left text-gray-700 mb-4">
                     CONTACT
@@ -437,7 +426,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center space-x-4">
                     <label
                       htmlFor="category"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Email <span className="text-red-500">*</span>
                     </label>
@@ -456,7 +445,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="mobilenumber"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Phone Number <span className="text-red-500">*</span>
                     </label>
@@ -480,7 +469,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="emergencycontactname"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-sm lg:text-base justify-start text-start"
                     >
                       Name <span className="text-red-500">*</span>
                     </label>
@@ -501,7 +490,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="emergencycontactnumber"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-sm lg:text-base justify-start text-start"
                     >
                       Number <span className="text-red-500">*</span>
                     </label>
@@ -526,7 +515,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="couponCode"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Code
                     </label>
@@ -542,7 +531,7 @@ const RegistrationPage = () => {
                   <div className="flex items-center mt-2 space-x-4">
                     <label
                       htmlFor="runnerClub"
-                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20   text-base justify-start text-start"
+                      className="2xl:w-52 xl:w-44 lg:w-28 md:w-52 sm:w-32 w-20 text-sm lg:text-base justify-start text-start"
                     >
                       Runner Club
                     </label>
@@ -559,37 +548,37 @@ const RegistrationPage = () => {
                       </select>
                     </div>
                   </div>
-                  <div className="mt-10 block lg:hidden ">
-                    <label
-                      htmlFor="lastName"
-                      className="w-52 text-base justify-start text-start"
-                    >
-                      Indicates mandatory fields{" "}
-                      <span className="text-red-500">*</span>
-                    </label>
-                    <div class="flex mt-4 items-center mb-4">
-                      <input
-                        id="default-checkbox"
-                        type="checkbox"
-                        value=""
-                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 justify-center text-center"
-                      />
-                      <label
-                        for="default-checkbox"
-                        class="ms-2 text-sm font-sm text-gray-400"
-                      >
-                        I have read and agree to the terms and conditions
-                      </label>
-                    </div>
-                    <button
-                      type="submit"
-                      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                    >
-                      Register
-                    </button>
-                  </div>
                 </div>
               </div>
+            </div>
+            <div className=" md:ml-16 lg:ml-8 xl:ml-12 2xl:ml-0 mt-4 block">
+              <label
+                htmlFor="lastName"
+                className="w-full text-base flex justify-start"
+              >
+                <span className="text-red-500">* </span> Indicates mandatory
+                fields
+              </label>
+              <div class="mt-4 flex justify-start mb-4">
+                <input
+                  id="default-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                />
+                <label
+                  for="default-checkbox"
+                  class="ms-2 text-sm font-sm text-gray-400"
+                >
+                  I have read and agree to the terms and conditions
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="flex justify-start text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-4 me-2 mb-2"
+              >
+                Register
+              </button>
             </div>
           </div>
         </section>

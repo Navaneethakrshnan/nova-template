@@ -9,16 +9,8 @@ const Events = () => {
   return (
     <div>
       <section class="text-gray-600 lg:px-12 body-font">
-        <div class="container px-5 pt-24 mb-0 mx-auto">
-          {/* <div class="flex flex-col text-center w-full mb-20">
-            <h1
-              class="text-4xl font-mediumnt- title-font text-[#292662]"
-              style={{ fontFamily: "Nunito Sans, sans-serif" }}
-            >
-              Recent Events
-            </h1>
-          </div> */}
-          <div class="flex flex-wrap lg:-mt-12 -m-4">
+        <div class="container px-5 pt-12 lg:pt-24  mb-0 mx-auto">
+          <div class="flex flex-wrap lg:-mt-12 -m-4 justify-center md:justify-start">
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
                 <div className="flex items-start">
@@ -46,7 +38,7 @@ const Events = () => {
                 </div>
               </div>
             </div>
-            <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="p-4 lg:w-1/4 md:w-1/2 justify-center">
               <div class="h-full flex flex-col items-center text-center">
                 <div className="flex items-start">
                   <div className="relative overflow-hidden">

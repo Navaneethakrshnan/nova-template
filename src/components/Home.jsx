@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
 import TestimonialsSlider from "./TestimonialsSlider";
@@ -12,7 +13,6 @@ import WhyChooseUs from "./WhyChooseUs";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import RegistrationPage from "./RegistrationPage";
-import Header2 from "./Header2";
 import EventLanding from "./EventLanding";
 
 const Home = () => {
@@ -20,33 +20,36 @@ const Home = () => {
     <div>
       <MainMenu />
       <MobileMenu />
-      <Testimonial/>
-      {/* <div class="flex flex-col text-center mt-12 lg:pt-20 w-full mb-20">
+      <div className="flex flex-col text-center mt-12 lg:pt-20 w-full mb-20">
         <h1
-          class="text-4xl font-mediumnt- title-font text-[#292662]"
+          className="text-4xl font-medium title-font text-[#292662]"
           style={{ fontFamily: "Nunito Sans, sans-serif" }}
         >
           Recent Events
-          <Events />
         </h1>
+        <Events />
       </div>
-      <Button />
-      <div class="flex flex-col pt-12 text-center w-full mb-20">
+      <Link>
+        <Button />
+      </Link>
+      <div className="flex flex-col pt-12 text-center w-full mb-20">
         <h1
-          class="text-4xl font-mediumnt- title-font text-[#292662]"
+          className="text-4xl font-medium title-font text-[#292662]"
           style={{ fontFamily: "Nunito Sans, sans-serif" }}
         >
           Upcoming Events
         </h1>
         <UpcomingEvents />
       </div>
-      <Button />
+      <Link to="/events">
+        <Button />
+      </Link>
       <Services />
       <Enquirey />
       <WhyChooseUs />
-      <Contact /> */}
-      {/* <RegistrationPage/> */}
-      {/* <EventLanding /> */}
+      <Contact />
+      {/* <RegistrationPage/>
+      <EventLanding /> */}
       <Footer />
     </div>
   );

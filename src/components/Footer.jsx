@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer class="text-gray-600 2xl:w-[96rem] 2xl:-ml-24 bg-[#292662] body-font">
         <div class="container px-10 md:pl-64 lg:px-10 py-8 mx-auto">
-          <div class="flex flex-wrap text-center -mb-10 -mx-4 md:space-x-2 lg:space-x-10 xl:space-x-10 2xl:space-x-14">
+          <div class="flex flex-wrap text-start md:text-center -mb-10 -mx-4 md:space-x-2 lg:space-x-10 xl:space-x-10 2xl:space-x-14">
             <div class="lg:w-1/6 md:w-1/2  w-full px-4">
               <h2
                 class="title-font font-medium text-white tracking-widest text-sm mb-3"
@@ -72,9 +72,9 @@ const Footer = () => {
           </div>
         </div>
         <hr></hr>
-        <div class="container px-10 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <div class="container px-10 py-6 mx-auto flex items-start md:items-center sm:flex-row flex-col">
           <p
-            class="text-sm text-white sm:ml-6 sm:mt-0 mt-4"
+            class="text-sm text-white text-start m:mt-0 mt-4"
             style={{ fontFamily: "Nunito Sans, sans-serif" }}
           >
             © 2024 NovaRace Management Solutions LLP. All Rights Reserved

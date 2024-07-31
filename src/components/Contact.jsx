@@ -16,8 +16,8 @@ const Contact = () => {
                     Contact Us
                   </h1>
                   <p
-                    class="leading-loose lg:text-md text-left tracking-wide mb-0 text-[#292662]"
-                    style={{ fontFamily: "Nunito Sans, sans-serif" }}
+                    class="leading-loose lg:text-lg font-medium text-left tracking-wide mb-0 text-[#292662]"
+                    style={{ fontFamily: "Abel, sans-serif" }}
                   >
                     NOVARACE MANAGEMENT SOLUTIONS LLP, PLOT NO 77 JBR TECH PARK
                     6TH RD WHITEFIELD WHITEFIELD POLICE STATION BANGALORE
@@ -30,8 +30,8 @@ const Contact = () => {
               <div class="h-full flex items-start">
                 <div class="flex-grow pl-6">
                   <p
-                    class="leading-relaxed text-lg mb-5 -mt-4 md:mt-14 text-[#292662]"
-                    style={{ fontFamily: "Nunito Sans, sans-serif" }}
+                    class="leading-relaxed lg:text-lg font-medium mb-5 -mt-4 md:mt-14 text-[#292662]"
+                    style={{ fontFamily: "Abel, sans-serif" }}
                   >
                     support@novarace.in
                   </p>

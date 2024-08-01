@@ -4,7 +4,7 @@ import LOGO from "../assets/logo-blue.png"
 const Header2 = () => {
   return (
     <div>
-      <nav className="border-gray-200 hidden lg:block lg:mt-0 lg:min-w-80 z-40 bg-[#292662] fixed top-0 left-0 w-full transition-colors duration-300">
+      <nav className="border-gray-200 hidden lg:block lg:mt-0 lg:min-w-64 z-40 bg-[#292662] fixed top-0 left-0 w-full transition-colors duration-300">
         <div className="mx-10 flex flex-wrap items-start justify-between lg:justify-normal p-4">
           <a
             href="https://www.novarace.in/"

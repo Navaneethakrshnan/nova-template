@@ -6,7 +6,7 @@ import Image3 from "../assets/3.svg";
 const WhyChooseUs = () => {
   return (
     <div>
-      <section class="text-gray-600 2xl:-ml-28 xl:-ml-0 lg:-ml-0 bg-[#e5f0fd] 2xl:w-[97rem] xl:w-screen lg:w-screen body-font">
+      <section class="text-gray-600 2xl:-ml-28 xl:-ml-0 lg:-ml-0 bg-[#e5f0fd] 2xl:w-[96rem] xl:w-screen lg:w-screen body-font">
         <div class="container px-30 md:px-20 lg:px-20 xl:px-5 py-12 mx-auto">
           <div class="flex flex-wrap pl-0 lg:-ml-8 xl:mx-44 2xl-ml-56">
             <div class="flex flex-col text-center w-full mb-3">

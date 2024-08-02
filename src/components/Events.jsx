@@ -9,7 +9,7 @@ const Events = () => {
   return (
     <div>
       <section class="text-gray-600 lg:px-12 body-font">
-        <div class="container px-5 pt-12 lg:pt-24  mb-0 mx-auto">
+        <div class="container px-5 pt-12 lg:pt-24 mb-0 mx-auto">
           <div class="flex flex-wrap lg:-mt-12 -m-4 justify-center md:justify-start">
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">

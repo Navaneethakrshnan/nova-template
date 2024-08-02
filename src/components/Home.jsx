@@ -20,7 +20,10 @@ const Home = () => {
     <div>
       <MainMenu />
       <MobileMenu />
-      <div className="flex flex-col text-center mt-12 lg:pt-20 w-full mb-20">
+      <div className="mt-0 lg:mt-0">
+        <Testimonial />
+      </div>
+      <div className="flex flex-col text-center mt-0 lg:pt-10 w-full ">
         <h1
           className="text-4xl font-medium title-font text-[#292662]"
           style={{ fontFamily: "Nunito Sans, sans-serif" }}
@@ -32,7 +35,7 @@ const Home = () => {
       <Link>
         <Button />
       </Link>
-      <div className="flex flex-col pt-12 text-center w-full mb-20">
+      <div className="flex flex-col pt-12 text-center w-full">
         <h1
           className="text-4xl font-medium title-font text-[#292662]"
           style={{ fontFamily: "Nunito Sans, sans-serif" }}
